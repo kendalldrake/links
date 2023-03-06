@@ -4,53 +4,58 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400&family=Pacifico&display=swap');
 
-.channel-title{
+.title{
 	font-family:'Antonio', sans-serif;
-	font-size: 150px;
+	font-size: 20vw;
 	font-weight: 400;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
 	letter-spacing: 15px;
-	padding-left: 150px;
+width:100%;
 	color: black;
 	text-transform: uppercase;
 }
 
 .overlay{
 	font-family:'Pacifico',cursive;
-	font-size:1000px;
+	font-size:90vw;
 	font-weight:lighter;
 	font-style:display;
 	color:#ECCFD8;
 	opacity: 40%;
 	margin-top: -100%;
-	margin-left: -10%;	
+	width: 100%;	
+	z-index: 11;
 }
 
 .channel-description{
 	font-family: 'Antonio';
-	font-size: 26px;
+	font-size: 3vw;
 	font-weight: lighter;
 	letter-spacing: 5px;
-    margin-top: -420px;
+    margin-top: -406px;
+	margin-left: 70px;
+	width: 100%;
 	/* margin-left: 100px; */
 	text-transform: uppercase;
-	padding-left: 175px;
 }
 
-.image-block{
+/* .image-block{
 	display:grid;
-	grid-template-columns: 1fr;
 	gap: 10px;
-}
+} */
 
-body { padding: 2em;
+body { 
 margin-top:50px;
-margin-left: 100px;
-margin-right: 100px;
+width: 100%;
+margin: auto;
+ padding: auto;
 }
 
 .image-block picture{
 	width: 100%;
-	height: 500px;
 	opacity: 0.5;
 	transition: 1s all;
 }
@@ -62,24 +67,33 @@ image{
 	display:block;
 	aspect-ratio: 2/2;
 	width: 100%;
-	border-radius: 50%;
+	
 }
 img{
 	border-radius: 50%;
 	height: 250px;
 	width:250px;
+	border-color: #FA8282;
+	border-width: 9px;
+	border-style: solid;
 }
 ul {
 	--columns: 1;
 	display: grid;
 	grid-template-columns: repeat(var(--columns),1fr);
 	justify-content: center;
+	padding-left: 7%;
+	padding-top: 10%;
+	align-items: center;
 	align-items: center;
 }
+li{
+	/* justify-content: center; */
+}
+
 .link-block{
 	border-radius: 50%;
-	height: 250px;
-	width:250px;
+	width:100%;
 	opacity: 0.5;
 	transition: 1s all;	
 }
@@ -115,7 +129,6 @@ ul {
 
 .video-file-block{
 	border-radius: 50%;
-	height: 400px;
 	width:400px;
 	opacity: 0.5;
 	transition: 1s all;
@@ -127,11 +140,10 @@ ul {
 /* Moving circles */
 
 .circles {
-
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 105%;
 	height: 100%;
 	overflow: hidden;
 }
@@ -313,10 +325,11 @@ strong { font-weight: bold; } */
 
 body, 
 section,
-ul,
 figure {
 	display: grid;
 	gap: 1em;
+	margin: auto;
+ padding: auto;
 }
 
 /* RESPONSIVE DESIGN QUERIES */
@@ -325,7 +338,6 @@ figure {
 	
 		.image-block{
 			display:grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
 			gap: 10px;
 		}
 	}
@@ -340,7 +352,18 @@ figure {
 	}
 	.image-block{
 		display:grid;
-		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 	}
 	}
+
+	.picture {
+		right:0;
+	}
+
+	@media only screen and (max-width: 600px)
+{.ul{
+	--columns: 4;
+	display: grid;	
+
+}
+}
