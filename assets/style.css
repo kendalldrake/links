@@ -1,3 +1,5 @@
+
+
 /* These styles are just to make it easier to see the blocks, initially. */
 
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400&family=Pacifico&display=swap');
@@ -20,8 +22,7 @@
 	color:#ECCFD8;
 	opacity: 40%;
 	margin-top: -100%;
-	margin-left: -10%;
-	/* position:fixed; */
+	margin-left: -10%;	
 }
 
 .channel-description{
@@ -49,14 +50,25 @@ margin-right: 100px;
 
 .image-block picture{
 	width: 100%;
-	height: 100%;
+	height: 500px;
+	opacity: 0.5;
+	transition: 1s all;
+}
+.image-block picture:hover{
+	opacity: 1;
 }
 
 image{
 	display:block;
 	aspect-ratio: 2/2;
 	width: 100%;
+	border-radius: 50%;
 
+}
+img{
+	border-radius: 50%;
+	height: 250px;
+	width:250px;
 }
 ul {
 	--columns: 1;
@@ -65,12 +77,39 @@ ul {
 	justify-content: center;
 	align-items: center;
 }
+.link-block{
+	border-radius: 50%;
+	height: 250px;
+	width:250px;
+	
+}
+/* .text-block{	
+	height: 300px;
+	width:300px;
+	font-family:'baskerville', sans-serif;
+	font-weight: lighter;
+	font-size: large;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align:start;
+	color:#8C2641;
+	opacity: 50%;
+} */
+
+.video-embed-block{
+	border-radius: 50%;
+	height: 400px;
+	width:400px;
+}
+
+.video-file-block{
+	border-radius: 50%;
+	height: 400px;
+	width:400px;
+}
 
 /* Moving circles */
-
-.main-area{
-
-}
 
 .circles {
 
@@ -257,9 +296,9 @@ a { color: blue; }
 em { font-style: italic; }
 strong { font-weight: bold; } */
 
-body,
+body, 
 section,
-/* ul, */
+ul,
 figure {
 	display: grid;
 	gap: 1em;
@@ -270,17 +309,22 @@ figure {
 @media only screen and (min-width: 600px) {
 		.image-grid{
 			display:grid;
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 			gap: 10px;
 		}
 	}
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 400px) {
 	.channel-title{
 		font-family:'Antonio';
 		font-size: 150px;
 		font-weight: 400;
 		letter-spacing: 15px;
 		/* padding-left: 0; */
+	}
+	.image-grid{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
 	}
 	}
