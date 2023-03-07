@@ -22,12 +22,12 @@
 
 .overlay{
 	font-family: 'Pacifico', cursive!important;
-	font-size:90vw;
+	font-size:110vw;
 	font-weight:lighter;
 	font-style:display;
 	color:#ECCFD8;
 	opacity: 40%;
-	margin-top: -167%;
+	margin-top: -190%;
 	margin-left: -6rem;
 	width: 100%;	
 	z-index: 11;
@@ -342,8 +342,8 @@ figure {
 	display: grid;
 	gap: 1em;
 	margin: auto;
- padding: auto;
- justify-content: center!important;
+    padding: auto;
+    justify-content: center!important;
 }
 
 /* RESPONSIVE DESIGN QUERIES */
@@ -357,13 +357,17 @@ figure {
 	}
 
 @media only screen and (min-width: 400px) {
-	.channel-title{
+	.title{
 		font-family:'Antonio';
-		font-size: 150px;
 		font-weight: 400;
-		letter-spacing: 15px;
+		letter-spacing: 10px;
 		/* padding-left: 0; */
 	}
+	.overlay{
+		margin-top: -180%;
+		margin-left: -3rem;
+	}
+	
 	.image-block{
 		display:grid;
 		gap: 10px;
@@ -377,7 +381,37 @@ figure {
 			margin-top: 16rem;
 		}
 	} */
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	li{
+		flex: 1;
+	
 
+	}
+	@media screen and (max-width: 575px) {
+	li{
+flex-basis: 50%;
+	}
+		}
+		
+		@media (min-width: 576px) and (max-width: 767px) {
+	li{
+		flex-basis: calc(33.33% - 20px);
+	}
+		}
+		
+		@media(min-width: 768px) and (max-width:991px){
+	li{
+		flex-basis: calc(25% - 20px);
+	}
+		}
+@media (min-width:992px){
+	li{
+		flex-basis: calc(20% - 20px);
+	}
+}
 	.picture {
 		right:0;
 	}
@@ -389,3 +423,13 @@ figure {
 
 }
 }
+@media screen and (max-width:400px){
+	.overlay { margin-top: -190%;
+               margin-left: -4.1rem;
+}
+.title{
+	letter-spacing: 10px!important;
+}
+}
+	
+
