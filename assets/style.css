@@ -13,19 +13,22 @@
 	align-content: center;
 	text-align: center;
 	letter-spacing: 15px;
-width:100%;
+    width:100%;
 	color: black;
 	text-transform: uppercase;
+	margin-top: 3rem;
+	padding-top: 1rem;
 }
 
 .overlay{
-	font-family:'Pacifico',cursive;
+	font-family: 'Pacifico', cursive!important;
 	font-size:90vw;
 	font-weight:lighter;
 	font-style:display;
 	color:#ECCFD8;
 	opacity: 40%;
-	margin-top: -100%;
+	margin-top: -167%;
+	margin-left: -6rem;
 	width: 100%;	
 	z-index: 11;
 }
@@ -53,7 +56,13 @@ width: 100%;
 margin: auto;
  padding: auto;
 }
-
+.img-block{
+	display: grid;
+    gap: 1em;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+}
 .image-block picture{
 	width: 100%;
 	opacity: 0.5;
@@ -86,8 +95,11 @@ ul {
 	padding-top: 10%;
 	align-items: center;
 	align-items: center;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 li{
+	margin-top: 2rem;
 	/* justify-content: center; */
 }
 
@@ -117,7 +129,7 @@ li{
 
 .video-embed-block{
 	border-radius: 50%;
-	height: 400px;
+	/* height: 400px; */
 	width:400px;
 	opacity: 0.5;
 	transition: 1s all;
@@ -143,7 +155,8 @@ li{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 105%;
+	max-width: 100%;
+	min-width: 115%;
 	height: 100%;
 	overflow: hidden;
 }
@@ -330,6 +343,7 @@ figure {
 	gap: 1em;
 	margin: auto;
  padding: auto;
+ justify-content: center!important;
 }
 
 /* RESPONSIVE DESIGN QUERIES */
@@ -354,7 +368,15 @@ figure {
 		display:grid;
 		gap: 10px;
 	}
+	/* ul{
+		margin-top: 8rem;
+	} */
 	}
+	/* @media(max-width:400px){
+		ul{
+			margin-top: 16rem;
+		}
+	} */
 
 	.picture {
 		right:0;
