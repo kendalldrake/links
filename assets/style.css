@@ -74,7 +74,7 @@ margin: auto;
 
 image{
 	display:block;
-	aspect-ratio: 2/2;
+	/* aspect-ratio: 2/2; */
 	width: 100%;
 	
 }
@@ -130,7 +130,7 @@ li{
 .video-embed-block{
 	border-radius: 50%;
 	/* height: 400px; */
-	width:400px;
+	/* width:400px; */
 	opacity: 0.5;
 	transition: 1s all;
 }
