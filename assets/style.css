@@ -364,35 +364,35 @@ figure {
 		/* padding-left: 0; */
 	}
 	.overlay{
-		margin-top: -180%;
+		margin-top: -190%;
 		margin-left: -3rem;
 	}
-	
+
 	.image-block{
 		display:grid;
 		gap: 10px;
 	}
-	/* ul{
-		margin-top: 8rem;
-	} */
+
 	}
-	/* @media(max-width:400px){
-		ul{
-			margin-top: 16rem;
-		}
-	} */
+    @media only screen and (min-width: 500px){
+    .overlay {
+    margin-top: -207%;
+    margin-left: -13rem;
+}
+}
+
 	ul{
 		display: flex;
 		flex-wrap: wrap;
 	}
 	li{
 		flex: 1;
-	
-
 	}
+
 	@media screen and (max-width: 575px) {
 	li{
-flex-basis: 50%;
+
+		flex-basis: 50%;
 	}
 		}
 		
@@ -410,6 +410,10 @@ flex-basis: 50%;
 @media (min-width:992px){
 	li{
 		flex-basis: calc(20% - 20px);
+	}
+	ul{
+		margin-top: 0;
+		padding-top: 0;
 	}
 }
 	.picture {
