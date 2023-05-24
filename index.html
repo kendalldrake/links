@@ -55,18 +55,22 @@
 			<div><a href="./index.html">ARTWORK</a></div>
 		</nav> -->
 		<section class="img-block">
+			
 			<ul class="link-block image-display image-square image-thumb audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
 			</ul>
+
 			<template id="image-block">
-			<li>
+			<li>	
 					<figure class="image-block">
 						<!-- <h3 class="title"></h3> -->
+						<span class="overlay-image">
 						<picture class="picture">
 							<source class="image-thumb">
 							<source class="image-square">
 							<source class="image-display">
 							<img class="image">
 						</picture>
+						</span>
 						<a class="link">
 							<!-- <p class="link-title"></p> -->
 						</a>
@@ -74,30 +78,38 @@
 						<!-- <p class="time-updated"></p>
 						<p class="time-created"></p> -->
 					   </figure>
-				       </li>
-					   
+				       </li>	   
 			</template>
+
+
 			<!-- Links (saved sites). -->
 <template id="link-block">
     <li>
 		<a class="link">
         <figure class="link-block">
             <!-- <h3 class="title"></h3> -->
+			<!-- <div class="img-card"> -->
+			<span class="overlay-link">
             <picture>
                 <source class="image-thumb">
                 <source class="image-square">
                 <source class="image-display">
                 <img class="image">
             </picture>
-                <!-- <p class="link-title"></p> -->
-            <!-- <figcaption class="description"></figcaption>
-            <p class="type"></p>
-            <p class="time-updated"></p>
+			</span>
+			<!-- <div class="overlay"></div> -->
+			<!-- </div> -->
+                <!-- <p class="link-title"></p>
+         <figcaption class="description"></figcaption>
+            <p class="type"></p> -->
+            <!-- <p class="time-updated"></p>
             <p class="time-created"></p> -->
         </figure>
 	</a>
     </li>
 </template>
+
+
 <!-- Text. -->
 <!-- <template id="text-block">
     <li>
@@ -111,18 +123,22 @@
         </figure>
     </li>
 </template>
+
+
 <!-- YouTube, Vimeo, etc. -->
 <template id="video-embed-block">
     <li>
 		<a class="link">
         <figure class="video-embed-block">
             <!-- <h3 class="title"></h3> -->
+			<span class="overlay-video1">
             <picture>
                 <source class="image-thumb">
                 <source class="image-square">
                 <source class="image-display">
                 <img class="image">
             </picture>
+		</span>
             <!-- <div class="embed"></div> -->
             <!-- <figcaption class="description"></figcaption>
             <p class="type"></p>
@@ -132,18 +148,22 @@
 	</a>
     </li>
 </template>
+
+
 <!-- Uploaded video files. -->
 <template id="video-file-block">
     <li>
         <figure class="video-file-block">
             <!-- <h3 class="title"></h3> -->
+			<span class="overlay-video2">
             <picture>
                 <source class="image-thumb">
                 <source class="image-square">
                 <source class="image-display">
                 <img class="image">
             </picture>
-            <video class="video" controls></video> <!-- Video source inserts here. -->
+			</span>
+        <video class="video" controls></video></span> <!-- Video source inserts here. -->
             <!-- <figcaption class="description"></figcaption>
             <p class="type"></p>
             <p class="time-updated"></p>
@@ -151,7 +171,9 @@
         </figure>
     </li>
 </template>
-		</section>
+
+
+</section>
 		
-	</body>
+</body>
 </html>
