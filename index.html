@@ -60,9 +60,9 @@
 			</ul>
 
 			<template id="image-block">
-			<li>	
+			<li>	<a class="link">
 					<figure class="image-block">
-						<!-- <h3 class="title"></h3> -->
+						<div class="title-hover">
 						<span class="overlay-image">
 						<picture class="picture">
 							<source class="image-thumb">
@@ -71,13 +71,16 @@
 							<img class="image">
 						</picture>
 						</span>
-						<a class="link">
+						<div class="overlay-text"><h3 class="title hover-caption"></h3></div>
+						</div>
+						<!-- <a class="link"> -->
 							<!-- <p class="link-title"></p> -->
-						</a>
+						<!-- </a> -->
 						<!-- <figcaption class="description"></figcaption> -->
 						<!-- <p class="time-updated"></p>
 						<p class="time-created"></p> -->
 					   </figure>
+					</a>
 				       </li>	   
 			</template>
 
@@ -87,8 +90,9 @@
     <li>
 		<a class="link">
         <figure class="link-block">
-            <!-- <h3 class="title"></h3> -->
+            <!-- <h3 class="title hover-caption-1"></h3> -->
 			<!-- <div class="img-card"> -->
+			<div class="title-hover">
 			<span class="overlay-link">
             <picture>
                 <source class="image-thumb">
@@ -97,6 +101,8 @@
                 <img class="image">
             </picture>
 			</span>
+			<div class="overlay-text"><h3 class="title hover-caption"></h3></div>
+			</div>
 			<!-- <div class="overlay"></div> -->
 			<!-- </div> -->
                 <!-- <p class="link-title"></p>
@@ -130,7 +136,8 @@
     <li>
 		<a class="link">
         <figure class="video-embed-block">
-            <!-- <h3 class="title"></h3> -->
+			<div class="title-hover">
+            <!-- <h3 class="title hover-caption" data-hover="title"></h3> -->
 			<span class="overlay-video1">
             <picture>
                 <source class="image-thumb">
@@ -139,22 +146,25 @@
                 <img class="image">
             </picture>
 		</span>
-            <!-- <div class="embed"></div> -->
-            <!-- <figcaption class="description"></figcaption>
+		<div class="overlay-text"><h3 class="title hover-caption"></h3></div>
+		</div>
+            <!-- <div class="embed"></div>
+          <figcaption class="description"></figcaption>
             <p class="type"></p>
             <p class="time-updated"></p>
-            <p class="time-created"></p> -->
+            <p class="time-created"></p>
         </figure>
 	</a>
     </li>
 </template>
 
 
-<!-- Uploaded video files. -->
+Uploaded video files. -->
 <template id="video-file-block">
     <li>
         <figure class="video-file-block">
             <!-- <h3 class="title"></h3> -->
+			<div class="title-hover">
 			<span class="overlay-video2">
             <picture>
                 <source class="image-thumb">
@@ -163,9 +173,11 @@
                 <img class="image">
             </picture>
 			</span>
+			<div class="overlay-text"><h3 class="title hover-caption"></h3></div>
+			</div>
         <video class="video" controls></video></span> <!-- Video source inserts here. -->
-            <!-- <figcaption class="description"></figcaption>
-            <p class="type"></p>
+        	<!-- <figcaption class="description"></figcaption> -->
+            <!-- <p class="type"></p>
             <p class="time-updated"></p>
             <p class="time-created"></p> -->
         </figure>
