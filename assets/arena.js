@@ -199,6 +199,9 @@ const renderBlock = (block, type) => {
 				element.href = block.attachment.url
 				elements.linkTitle.forEach((element) => element.innerHTML = block.title)
 			}
+			else if (block.image){
+				element.href = `https://www.are.na/block/${block.id}`
+			}
 			else {
 				element.remove()
 			}
