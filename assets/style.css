@@ -5,7 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-
+:root{
+	--button-bg:#FA8282;
+}
 .title{
 	font-family:'Antonio', sans-serif;
 	font-size: 20vw;
@@ -79,7 +81,7 @@ padding: auto;
 	z-index: 1;
 } */
 .overlay-image:hover, .overlay-video2:hover, .overlay-video1:hover, .overlay-link:hover{
-	background-color: rgba(128, 0, 128,0.6);
+	/* background-color: rgba(128, 0, 128,0.6); */
 	z-index: 100;
 	border-radius: 50%;
 	transition: all 0.3 ease;
@@ -107,6 +109,8 @@ padding: auto;
 	letter-spacing: 1px!important;
 	color: white !important;
 	margin-top: 0 !important;
+	
+
 }
 .title-hover{
 	position: relative;
@@ -119,17 +123,50 @@ padding: auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 2px;
+	padding: 1rem;
 	bottom: 0;
 	opacity: 0;
 	position: absolute;
 }
 
-.image-block:hover .overlay-text, .link-block:hover .overlay-text , .video-embed-block:hover .overlay-text, .video-file-block:hover .overlay-text {
+.image-block:hover .overlay-text, .block-link:hover .overlay-text , .video-embed-block:hover .overlay-text, .video-file-block:hover .overlay-text {
 	background-color: rgba(128, 0, 128, 0.6);
 	transition: 0.5s ease;
 	opacity: 1;
 }
+.block-link:hover .overlay-text {
+	background-color: rgba(140, 38, 65, 0.9);
+}
+.video-embed-block:hover .overlay-text{
+	background-color: rgba(250, 130, 130, 0.9);
+}
+.video-file-block:hover .overlay-text{
+	background-color: rgba(230, 162, 58, 0.9);
+}
+.section-nav button{
+	border-radius: 3rem;
+    width: 10rem;
+    height: 2.5rem;
+    border: 2px solid var(--button-bg);
+    margin-right: 1rem;
+    text-align: center;
+	font-family: 'roboto';
+	font-size: 1.2rem;
+	font-weight:lighter;
+	margin-bottom: 6rem;
+    margin-left: 5rem;
+
+}
+.section-nav button:hover{
+	background-color: var(--button-bg);
+	color: white;
+}
+.section-nav{
+	display: flex;
+	justify-content: center;
+}
+
+
 /* .overlay-image:hover:before{
 	content: attr(data-hover);
 	padding: 5px;
@@ -153,6 +190,30 @@ padding: auto;
 	background-color: rgba(128, 0, 128,0.6);
 
 } */
+.image-block:hover, 
+.block-link:hover ,
+.video-embed-block:hover,
+.video-file-block:hover 
+{
+	animation: scaleAni 2s linear infinite;
+}
+@-webkit-keyframes scaleAni{
+	0%{
+
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	50%{
+
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	100%{
+
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
 image{
 	display:block;
 	/* aspect-ratio: 2/2; */
