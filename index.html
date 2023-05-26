@@ -54,13 +54,19 @@
 			<div><a href="./Entry2/index_2.html">VIDEOS</a></div>
 			<div><a href="./index.html">ARTWORK</a></div>
 		</nav> -->
+		<div class="section-nav">
+			<button class="b1" data-section="image-block">Artwork</button>
+			<button class="b1" data-section="link-block">Blogs</button>
+			<button class="b1" data-section="video-embed-block">Videos</button>
+		</div>
 		<section class="img-block">
 			
 			<ul class="link-block image-display image-square image-thumb audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
 			</ul>
 
 			<template id="image-block">
-			<li>	<a class="link">
+			<li class="image-block">	
+				<a class="link">
 					<figure class="image-block">
 						<div class="title-hover">
 						<span class="overlay-image">
@@ -87,9 +93,9 @@
 
 			<!-- Links (saved sites). -->
 <template id="link-block">
-    <li>
+    <li class="link-block">
 		<a class="link">
-        <figure class="link-block">
+        <figure class="link-block block-link">
             <!-- <h3 class="title hover-caption-1"></h3> -->
 			<!-- <div class="img-card"> -->
 			<div class="title-hover">
@@ -124,16 +130,12 @@
             <div class="content"></div> Text blocks insert their HTML here.
             <figcaption class="description"></figcaption>
             <p class="type"></p> -->
-            <!-- <p class="time-updated"></p>
-            <p class="time-created"></p> -->
-        </figure>
-    </li>
-</template>
+            <!-- <p class="time-updated"></p> -->
 
 
 <!-- YouTube, Vimeo, etc. -->
 <template id="video-embed-block">
-    <li>
+    <li class="video-embed-block">
 		<a class="link">
         <figure class="video-embed-block">
 			<div class="title-hover">
@@ -152,14 +154,14 @@
           <figcaption class="description"></figcaption>
             <p class="type"></p>
             <p class="time-updated"></p>
-            <p class="time-created"></p>
-        </figure>
+            <p class="time-created"></p> -->
+        </figure> 
 	</a>
     </li>
 </template>
 
 
-Uploaded video files. -->
+
 <template id="video-file-block">
     <li>
         <figure class="video-file-block">
@@ -183,9 +185,34 @@ Uploaded video files. -->
         </figure>
     </li>
 </template>
-
-
 </section>
-		
+
+</div>
+
+<script>
+	function showSection (sectionClass){
+		const sections = document.querySelectorAll('.img-block li');
+		sections.forEach(section => {
+			section.style.display = 'none';
+		}); 
+		const section = document.querySelectorAll(`.img-block li.${sectionClass}`);
+		section.forEach (sec => {
+			sec.style.display = 'block';
+		});
+		}
+		const buttons = document.querySelectorAll('.b1');
+		buttons.forEach (button => { 
+		button.addEventListener('click' , () => {
+			const sectionClass = button.dataset.section;
+		showSection(sectionClass)	
+		});
+
+		});
+
+		const firstSection = document.querySelectorAll('.img-block li.image-block');
+		firstSection.forEach(fsec => {
+			fsec.style.display = 'block';
+		});
+		</script>		
 </body>
 </html>
