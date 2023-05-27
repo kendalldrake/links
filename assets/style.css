@@ -10,7 +10,7 @@
 }
 .title{
 	font-family:'Antonio', sans-serif;
-	font-size: 20vw;
+	font-size: 12vw;
 	font-weight: 400;
 	justify-content: center;
 	align-items: center;
@@ -26,7 +26,8 @@
 
 .overlay{
 	font-family: 'Pacifico', cursive!important;
-	font-size:110vw;
+	cursor: pointer;
+	font-size:56rem;
 	font-weight:lighter;
 	font-style:display;
 	color:#ECCFD8;
@@ -35,6 +36,9 @@
 	margin-left: -6rem;
 	width: 100%;	
 	z-index: 11;
+}
+.overlay-font{
+	font-family: 'Pacifico', cursive!important;
 }
 
 .channel-description{
@@ -109,9 +113,8 @@ padding: auto;
 	letter-spacing: 1px!important;
 	color: white !important;
 	margin-top: 0 !important;
-	
-
 }
+
 .title-hover{
 	position: relative;
 }
@@ -311,7 +314,7 @@ li{
 @keyframes animate{
 	0%{
      opacity: 1;
-	 border-radius: 0;
+	 border-radius: 50%;
 	 transform: translateY(0) rotate(0deg);
 	}
 	100%{
