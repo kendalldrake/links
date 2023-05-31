@@ -248,7 +248,7 @@ ul {
 	display: grid;
 	grid-template-columns: repeat(var(--columns),1fr);
 	justify-content: center;
-	padding-left: 7%;
+	padding-left: 0%;
 	padding-top: 10%;
 	align-items: center;
 	align-items: center;
@@ -716,7 +716,6 @@ figure {
 		opacity: 1;
 		padding: 1rem 2rem;
 	}
-	
 	.image-block .overlay-text{
 		background-color: rgba(128, 0, 128, 0.6);
 		transition: 0.5s ease;
@@ -733,6 +732,23 @@ figure {
 	}
 	.hover-caption{
 		font-size: 0.7rem !important;
+	}
+	@-webkit-keyframes scaleAni{
+		0%{
+	
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+		50%{
+	
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+		100%{
+	
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
 	}
 }
 
@@ -805,11 +821,11 @@ figure {
 		height: 76%;
 	}
 }
-/* *{
+ /* *{
 	background-color: #000 !important;
 	color: #0f0 !important;
 	outline:  solid #f00 1px !important;
-} */
+}  */
 
 
 
