@@ -8,6 +8,9 @@
 :root{
 	--button-bg:#FA8282;
 }
+body{
+	overflow-x: hidden !important;
+}
 .title{
 	font-family:'Antonio', sans-serif;
 	font-size: 12vw;
@@ -109,7 +112,7 @@ padding: auto;
 .hover-caption{
 	font-family:'roboto'!important;
 	/* font-weight: 700!important; */
-	font-size: 1vw!important;
+	font-size: 1rem!important;
 	letter-spacing: 1px!important;
 	color: white !important;
 	margin-top: 0 !important;
@@ -170,6 +173,7 @@ padding: auto;
 	/* justify-content: center; */
 	text-align: center;
 	grid-template-columns: repeat(3, 1fr);
+	margin-top: 1rem;
 }
 .section-nav-wrapper{
 	display: flex;
@@ -314,7 +318,7 @@ li{
 	left: 0;
 	max-width: 100%;
 	min-width: 100%;
-	height: 95%;
+	height: 78%;
 	overflow: hidden;
 }
 
@@ -517,7 +521,7 @@ figure {
 	.title{
 		font-family:'Antonio';
 		font-weight: 400;
-		letter-spacing: 10px;
+		/* letter-spacing: 10px; */
 		/* padding-left: 0; */
 	}
 	.overlay{
@@ -589,14 +593,7 @@ figure {
 
 }
 }
-@media screen and (max-width:400px){
-	.overlay { margin-top: -190%;
-               margin-left: -4.1rem;
-}
-.title{
-	letter-spacing: 10px!important;
-}
-}
+
 @media screen and (max-width: 567px){
 	.circles{
 		height: 85%;
@@ -751,23 +748,80 @@ figure {
 		}
 	}
 }
-
+@media screen and (max-width:2560px){
+	.overlay  
+	{	margin-top: -168%;
+    	margin-left: -13rem;
+		font-size: 68rem;
+}
+.circles{
+	height: 60%;
+}
+}
+@media screen and (max-width:1920px){
+	.overlay  
+	{	margin-top: -171%;
+    	margin-left: -13rem;
+}
+.circles{
+	height: 89%;
+}
+}
+@media screen and (max-width:1600px){
+	.overlay  
+	{	margin-top: -210%;
+    	margin-left: -13rem;
+}
+.circles{
+	height: 107%;
+}
+}
+@media screen and (max-width:1536px){
+	.overlay  
+	{	margin-top: -190%;
+    	margin-left: -13rem;
+}
+.circles{
+	height: 95%;
+}
+}
+@media screen and (max-width:1280px){
+	.overlay  
+	{	margin-top: -212%;
+    	margin-left: -13rem;
+}
+.circles{
+	height: 120%;
+}
+}
 @media screen and (max-width:1400px){
 	.overlay  
 	{	margin-top: -215%;
     	margin-left: -13rem;
 }
 }
-@media (max-width:1300px){
+/* @media (max-width:1300px){
 	.overlay {
 		margin-top: -224%;
 		margin-left: -13rem;
 	}
-}
-@media (max-width:1200px){
+} */
+@media (max-width:1360px){
 	.overlay {
-		margin-top: -238%;
+		margin-top: -202%;
 		margin-left: -13rem;
+	}
+	.circles{
+		height: 126%;
+	}
+	}
+@media (max-width:1280px){
+	.overlay {
+		margin-top: -209%;
+		margin-left: -13rem;
+	}
+	.circles{
+		height: 125%;
 	}
 	}
 @media (max-width:1100px){
@@ -782,10 +836,22 @@ figure {
 		margin-left: -13rem;
 	}
 }
+@media screen and (max-width:1024px){
+	.overlay  
+	{	margin-top: -235%;
+    	margin-left: -13rem;
+}
+.circles{
+	height: 124%;
+}
+}
 @media (max-width:900px){
 	.overlay {
 		margin-top: -273%;
 		margin-left: -13rem;
+	}
+	.hover-caption{
+		font-size: 0.9rem !important;
 	}
 }
 
@@ -818,8 +884,62 @@ figure {
 		width: 22rem;
 	}
 	.circles{
-		height: 76%;
+		height:58% !important;
 	}
+	.title{
+		font-size: 16vw;
+		padding-top: 10rem;
+	}
+	.section-nav{
+		margin-top: -6rem;
+	}
+	.overlay {
+		margin-top: -286%;
+		margin-left: -8rem;
+	}
+}
+@media screen and (max-width:400px){
+	.overlay { margin-top: -248%;
+               margin-left: -4.1rem;
+}
+	.circles{
+		height: 60% !important;
+	}
+.title{
+	letter-spacing: 10px!important;
+	padding-top: 10rem;
+}
+.section-nav {
+    margin-top: -4rem;
+}
+}
+@media (max-width:375px){
+	/* .circles {
+		height: 77% !important;
+	} */
+	.circles{
+		height:65% !important;
+	}
+	.title{
+		font-size: 16vw;
+		padding-top: 4rem;
+	}
+	.section-nav{
+		margin-top: -6rem;
+	}
+	.overlay {
+		margin-top: -240%;
+		margin-left: -4.1rem;
+	}
+	
+}
+.hover-caption{
+	font-family:'roboto'!important;
+	/* font-weight: 700!important; */
+	font-size: 1rem!important;
+	letter-spacing: 1px!important;
+	color: white !important;
+	margin-top: 0 !important;
 }
  /* *{
 	background-color: #000 !important;
