@@ -1137,6 +1137,9 @@ figure {
 		height: 29rem;
 	}
 	}
+	.hover-caption{
+		padding-top: 0;
+		}
  /* *{
 	background-color: #000 !important;
 	color: #0f0 !important;
